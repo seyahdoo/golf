@@ -59,8 +59,14 @@ public class Ball : MonoBehaviour {
         if (col.gameObject.GetComponent<Goal>()) {
             Invoke(nameof(LoadNextScene), 1f);
         }
+        if (col.gameObject.GetComponent<Spike>()) {
+            Invoke(nameof(RestartLevel), 1f);
+        }
     }
     private void LoadNextScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    private void RestartLevel() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
