@@ -494,7 +494,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2456503086258036276, guid: f67307b5728321348abab9a9db760244, type: 3}
       propertyPath: m_LinearDrag
-      value: 0.3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456503086258036276, guid: f67307b5728321348abab9a9db760244, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2456503086258036279, guid: f67307b5728321348abab9a9db760244, type: 3}
       propertyPath: m_RootOrder
